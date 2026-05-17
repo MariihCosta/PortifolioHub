@@ -1,0 +1,21 @@
+RELATÓRIO — DESAFIO DE VERSIONAMENTO
+
+1. Introdução
+O presente trabalho teve como objetivo criar um repositório utilizando GitHub para armazenamento de projetos acadêmicos e pessoais.
+
+2. Ferramentas Utilizadas
+- Git
+- GitHub
+- GitHub Pages
+- LinkedIn
+
+3. Desenvolvimento
+Foi criado um repositório chamado PortfolioHUB contendo uma página web inicial desenvolvida em HTML e CSS.
+
+Também foram aplicadas técnicas de versionamento utilizando Git.
+
+4. Organização
+O repositório foi organizado em pastas específicas para projetos acadêmicos, pessoais, documentação e imagens.
+
+5. Conclusão
+O projeto permitiu aprender conceitos de versionamento, hospedagem de código e criação de portfólio profissional.
