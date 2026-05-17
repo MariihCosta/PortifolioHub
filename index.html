@@ -277,30 +277,62 @@
       background: var(--gold-dim);
     }
 
-   .sobre-visual {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .sobre-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
 
-.avatar-frame {
-  width: 400px;
-  height: 500px;
-  border-radius: 30px;
-  overflow: hidden;
-  border: 2px solid rgba(201,169,110,0.4);
-  box-shadow:
-    0 0 40px rgba(201,169,110,0.15),
-    0 0 80px rgba(0,0,0,0.4);
-}
+    .avatar-frame {
+      width: 240px;
+      height: 300px;
+      border: 1px solid var(--border);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
 
-.avatar-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+    .avatar-frame::before {
+      content: '';
+      position: absolute;
+      inset: 8px;
+      border: 1px solid var(--border);
+      z-index: 1;
+    }
+
+    .avatar-initials {
+      font-family: var(--serif);
+      font-size: 5rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--gold-dim);
+      letter-spacing: -0.03em;
+      z-index: 2;
+    }
+
+    .avatar-frame::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      height: 40%;
+      background: linear-gradient(to top, rgba(201,169,110,0.05), transparent);
+    }
+
+    .corner-accent {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-color: var(--gold);
+      border-style: solid;
+    }
+
+    .corner-accent.tl { top: -4px; left: -4px; border-width: 1px 0 0 1px; }
+    .corner-accent.br { bottom: -4px; right: -4px; border-width: 0 1px 1px 0; }
+
     /* ── Projetos ── */
     .projetos-grid {
       display: grid;
@@ -578,20 +610,16 @@
             <li>UI/UX</li>
             <li>Algoritmos</li>
           </ul>
-     </div> <!-- fecha sobre-text -->
-
+        </div>
         <div class="sobre-visual reveal reveal-delay-2">
           <div class="avatar-frame">
-            <img 
-              src="./imagens/foto.jpg" 
-              alt="Foto de Maria Eduarda"
-              class="avatar-img"
-            >
+            <div class="corner-accent tl"></div>
+            <div class="corner-accent br"></div>
+            <span class="avatar-initials">ME</span>
           </div>
         </div>
-
-      </div> <!-- fecha sobre-grid -->
-    </section> <!-- fecha section#sobre -->
+      </div>
+    </section>
 
     <!-- ═══════════════ PROJETOS ═══════════════ -->
     <section id="projetos">
@@ -637,16 +665,16 @@
   </main>
 
   <!-- ═══════════════ FOOTER / CONTATO ═══════════════ -->
- <footer id="contato">
+  <footer id="contato">
     <div class="footer-top">
       <div class="footer-cta reveal">
         <h2>Vamos<br><em style="font-style:italic; color: var(--gold-light);">conversar?</em></h2>
-        <a href="mailto:mariihcosta02@gmail.com?subject=Contato%20via%20Portfólio" class="btn">Enviar Mensagem</a>
+        <a href="mailto:mariaeduarda@email.com" class="btn">Enviar Mensagem</a>
       </div>
       <nav class="social-links reveal reveal-delay-2">
-        <a href="https://github.com" target="_blank">GitHub</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://github.com/MariihCosta" target="_blank">GitHub</a>
+        <a href="www.linkedin.com/in/maria-eduarda-costa-709344362" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/itsmariih._?igsh=dnZlNWo1Znd6bmZl&utm_source=qr" target="_blank">Instagram</a>
       </nav>
     </div>
     <div class="footer-bottom">
